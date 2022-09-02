@@ -1,0 +1,117 @@
+:root {
+    --pink: magenta;
+    --dark: rgb(46, 45, 45);
+    --padding: 15px;
+    --radius: 10px;
+}
+
+body {
+    color: white;
+    background-color: rgb(46, 45, 45);
+    font-size: 20px;
+    line-height: 32px;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+.page-title {
+    color: var(--pink);
+    font-size: 65px;
+    margin: 25px;
+    line-height: 65px;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+header p {
+    margin: 0 auto 50px;
+    padding: 10px 0 0 0;
+    max-width: 960px;
+}
+
+/* Main  */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.card-column {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    margin: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed white;
+    padding: 20px;
+    position: relative;
+
+}
+
+.card h2, .card p {
+    color: var(pink);
+}
+
+.card h2 {
+    background-color: var(--dark);
+    font-size: 38px;
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: -34px;
+}
+
+.card p {
+    margin-top: 25px;
+}
+
+.code-block {
+    flex: 1;
+    background: linear-gradient(pink, var(--pink));
+    white-space: prewrap;
+
+}
+
+@media (max-width: 1400px) {
+    .card-column {
+        width: 48%;
+    }
+}
+
+@media (max-width: 930px) {
+    .card-column {
+        width: 100%;
+    }
+}
+
+figure.card.code-card {
+    border: 1px dashed white;
+    position: relative;
+    padding: 20px 10px 10px 10px;
+}
+
+.card-header {
+    border: 1px solid white;
+    top: -8px;
+    left: 10px;
+    width: 95%; 
+}
+
+
+
+
+
